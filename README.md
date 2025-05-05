@@ -1,57 +1,126 @@
-# PAPA React JS Resume Starter Pack and Digital Portfolio
+```markdown
+# Krishna Dayal Bohra - Portfolio Website
 
-![PAPA React JS Portfolio Starter Pack](resume-screenshot.jpg?raw=true "PAPA React JS Portfolio Stater Pack ")
+![Project Structure](https://img.shields.io/badge/Project%20Structure-Organized-brightgreen)
+![React](https://img.shields.io/badge/Built%20With-React-61DAFB)
 
-### <a href="https://669e9d080c86fb1064954aae--soft-begonia-4eba06.netlify.app/">LIVE DEMO</a>
+A modern, responsive portfolio website built with React to showcase professional skills, projects, and experience. Designed with a clean interface and optimal user experience in mind.
 
-## Resume Starter Pack Description
+## ✨ Features
 
-This portfolio starter pack is made using React. The data on the portfolio is directly linked to a JSON file. Any changes to the portfolio can be made in the JSON file. The changes will then be reflected on to the portfolio. This allows you to customize your own personal portfolio that can be used for applying to jobs or other personal uses.
+- **Multi-Section Layout**:  
+  About Me, Resume, Portfolio, Testimonials, and Contact sections
+- **Responsive Design**:  
+  Optimized for all screen sizes (desktop/tablet/mobile)
+- **Interactive Elements**:  
+  - jQuery-powered flex slider  
+  - Magnific Popup lightbox  
+  - Smooth scroll navigation
+- **Rich Typography**:  
+  Using Librebaskerville & Open Sans fonts
+- **Icon Libraries**:  
+  Font Awesome (v4) + Custom Fontello icons
+- **Performance**:  
+  Modernizr feature detection + Waypoints for scroll events
 
-## 1. Make sure you have NODE installed!
+## 🚀 Installation
 
-Firstly, you will need to download the latest version of Node by <a href="https://nodejs.org/en/download/">CLICKING HERE</a>
+1. **Prerequisites**:  
+   - Node.js (v14+ recommended)
+   - npm (v6+)
 
-## 2. Clone the repo!
+2. **Setup**:
+   ```bash
+   git clone https://github.com/username/krishnadayalbohra-portfoliowebsite.git
+   cd krishnadayalbohra-portfoliowebsite
+   npm install
+   ```
 
-Next, you will need to run the following command in the Terminal to clone the repo onto your machine.
+3. **Run Development Server**:
+   ```bash
+   npm start
+   ```
+   App runs at `http://localhost:3000`
 
-`git clone https://github.com/sonnysangha/Resume-Portfolio-Starter-pack.git`
+4. **Production Build**:
+   ```bash
+   npm run build
+   ```
 
-## 3. Install Dependancies
+## 📂 Project Structure
 
-Next, you need to install all the dependancies using:
+```
+public/
+├── index.html          # Main HTML template
+├── resumeData.json     # All content configuration
+├── css/                # Global styles + font assets
+├── js/                 # Third-party scripts
+└── images/             # Portfolio images
 
-`npm install`
+src/
+├── Components/         # React components
+│   ├── About.js
+│   ├── Contact.js
+│   ├── Footer.js
+│   ├── Header.js
+│   ├── Portfolio.js
+│   ├── Resume.js
+│   └── Testimonials.js
+├── App.js              # Main component
+└── index.js            # React DOM render
+```
 
-Once this is done, you can start the app with:
+## 🛠 Customization
 
-`npm start`
+1. **Content Updates**:  
+   Edit `public/resumeData.json` to modify:
+   - Personal information
+   - Work experience
+   - Education
+   - Skills
+   - Portfolio projects
+   - Testimonials
+   - Social links
 
-## 4. Fill in your personal info
+2. **Styling**:  
+   Modify CSS files in `public/css/`:
+   - `layout.css`: Overall page structure
+   - `media-queries.css`: Responsive rules
+   - `fonts.css`: Font configurations
 
-To populate the website with all of your own data, open the public/resumeData.json file and simply replace the data in there with your own. Images for the porfolio section are to be put in the public/images/portfolio folder.
+3. **Icons**:  
+   - Add/remove icons through [Fontello](http://fontello.com)  
+     (Upload `public/css/fontello/config.json`)
 
-## 5. (OPTIONAL) Replacing images and/or fonts
+## 🧰 Technologies Used
 
-If you want to display your own pictures then you have to replace the files at these locations: public/images/header-background.jpg, public/images/testimonials-bg.jpg and public/favicon.ico. FILE NAMES MUST NOT BE CHANGED else the code referencing these images will no longer work.
+- **Core**: React, JavaScript (ES6+), HTML5, CSS3
+- **Libraries**:  
+  - jQuery + Plugins (fitText, FlexSlider, Magnific-Popup)
+  - Modernizr, Waypoints
+- **Fonts**: Open Sans, Librebaskerville
+- **Icons**: Font Awesome 4, Custom Fontello set
 
-## 7. Finalising Resume
+## 🤝 Contributing
 
-Once all the formatting and data input is finalised, run `npm run build`. This will create a dedicated build folder.
+1. Fork the repository
+2. Create feature branch:  
+   `git checkout -b feature/your-feature`
+3. Commit changes:  
+   `git commit -m 'Add some feature'`
+4. Push branch:  
+   `git push origin feature/your-feature`
+5. Submit a Pull Request
 
-## 8. Host Resume Online
+## 📄 License
 
-1. Open the build folder in the finder screen
-2. Go to <a href="https://www.netlify.com/">Netlify</a> and set up a profile
-3. Go to the 'Sites Tab'
-4. Simply Drag and drop the 'Build' Folder into the designated upload space
-5. The app will begin deploying & the deployment URL will be presented!
+MIT License. See `package.json` for full details.
 
-🚀 BOOM, you are now LIVE!!!
+---
 
-## Credits
+**Note**: Service worker registration handled by `src/registerServiceWorker.js` (Configure as needed for PWA features).
 
-##### Original Idea
+Made with ❤️ by [Your Name] | [Live Demo](#) 
+``` 
 
-<a href="https://github.com/tbakerx/react-resume-template/blob/master/README.md">Inspiration from Tim Baker (tbakerx)</a>
+*Replace `[Your Name]` and `[Live Demo]` link before deployment.*
